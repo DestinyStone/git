@@ -1,0 +1,6 @@
+1. 基本命令
+	git log 
+
+其他常用
+	git log -最近次数
+	git log --pretty=oneline  //一行一行显示

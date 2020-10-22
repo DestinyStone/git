@@ -1,0 +1,27 @@
+1. 查看git文件状态	
+	git status
+
+2. 常见分区
+	工作区, 暂存区, 对象区
+	
+3. 常见文件状态
+	untracked 脱离git管理， 工作区
+	staged 以暂存， 暂存区
+	modified 被修改, 在工作区
+	deleted 以删除，暂存区   // 执行命令  git rm -f 1.txt
+	
+4. 区域移动
+	untracked  
+		git add 文件名  //移动到暂存区
+	staged
+		git reset HEAD 文件名 //移动到工作区
+		git commit -m ""  //移动到对象区
+	modified
+		git add 文件名  //移动到暂存区
+		git checkout -- 文件名 //撤销修改
+	deleted
+		git commit -m ""  //彻底删除
+		(git reset HEAD 文件名   git checkout -- 文件名 //撤销修改)
+	文件一旦修改则进入工作区
+	
+	

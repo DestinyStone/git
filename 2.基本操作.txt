@@ -1,0 +1,26 @@
+0. 初始化项目
+	git init
+
+1. 关联项目
+	a. 第一次关联项目
+		git remote add origin 项目标识符
+	b. 修改关联项目
+		git remote set-url origin 项目标识符
+	c. 查看关联项目
+		git remote show origin
+
+2. 提交项目到本地暂存区
+	git add .
+	
+3. 提交到对象区
+	git commit -m "提交信息"  
+	
+3. 提交到master分支
+	git push origin master
+	
+	重新提交
+		git commit --amend -m "修正"
+	
+4. 更新
+	git pull
+	
